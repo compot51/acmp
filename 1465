@@ -1,0 +1,19 @@
+#include <iostream>
+#define ll long long
+using namespace std;
+ 
+ll n, m, i;
+int main() {
+    ll l=1, r=1000000000;
+    char c;
+    do{
+        m=(l+r)/2;
+        cout << m << endl;
+        cout.flush();
+        cin >> c;
+        if(c=='>') l=m+1;
+        else if (c=='<') r=m-1;
+            else return 0;
+    } 
+    while(1);
+}
